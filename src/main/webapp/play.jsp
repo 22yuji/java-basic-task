@@ -9,9 +9,9 @@
     int i = 0;  //プレイヤー順番
     int pNum = 0;  //どの数字を押したか
     String[] playername = {"A", "B"};  // プレイヤー用の変数
-    String player = null;
+    String player = null;  //プレイヤー
     String pickNum = request.getParameter("num");  //取る石の数
-    String drawStone = null;
+    String drawStone = null;  //描画する石の変数
     
   	//初期化
     if (session.getAttribute("init") == null){
@@ -24,7 +24,7 @@
     i = (int)session.getAttribute("turn");
     totalNum = (int)session.getAttribute("totalNum");
     
-    //プレイヤーの切り替え
+    //プレイヤーを切り替える
     if(!Utility.isNullOrEmpty(pickNum)){
     	pNum = Integer.parseInt(pickNum);
     	
