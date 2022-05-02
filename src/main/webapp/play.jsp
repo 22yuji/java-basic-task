@@ -85,7 +85,7 @@
 	    <form action="play.jsp">
 	      <p>
 	        石を
-	        <input type="number" name="num" min="1" max="25">
+	        <input type="number" name="num" min="1" max="3">
 	        個取る<br> ※1度に3個取れます。
 	      </p>
 	      <button class="btn" type="submit">決定</button>
